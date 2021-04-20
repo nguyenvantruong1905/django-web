@@ -1,0 +1,16 @@
+{% load static %}
+
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+<h2>Log In</h2>
+<head> 
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<head> 
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Log In</button>
+</form>
